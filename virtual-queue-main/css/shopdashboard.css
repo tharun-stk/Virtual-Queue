@@ -1,0 +1,136 @@
+                * {
+                    padding: 0%;
+                    margin: 0%;
+                }
+                
+                html {
+                    scroll-behavior: smooth;
+                }
+                
+                body {
+                    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+                    background: linear-gradient(to right, #25c481, #25b7c4);
+                }
+                
+                .img {
+                    width: 30%;
+                    display: flex;
+                }
+                
+                .img img {
+                    width: -webkit-fill-available;
+                }
+                
+                .name-logout {
+                    display: flex;
+                    margin: 0px 124px;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .summary {
+                    display: flex;
+                    margin: 62px;
+                    justify-content: center;
+                }
+                
+                .action {
+                    display: flex;
+                    flex-direction: column;
+                    width: 215px;
+                }
+                
+                .des {
+                    margin: 0px 62px;
+                    width: 50%;
+                }
+                
+                h2 {
+                    font-variant-caps: small-caps;
+                }
+                
+                .error h2 {
+                    background: red;
+                    text-align: center;
+                }
+                
+                .action button {
+                    margin: 10px 0px;
+                }
+                
+                .button {
+                    background-color: lightblue;
+                    /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s;
+                    /* Safari */
+                    transition-duration: 0.4s;
+                }
+                
+                .button2:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+                
+                .button1 {
+                    background-color: lightpink;
+                }
+                
+                .table table {
+                    border: 2px solid aquamarine;
+                    border-radius: 5px;
+                    max-width: none;
+                    height: fit-content;
+                    margin: 75px 44px;
+                    border-collapse: collapse;
+                    background: aquamarine;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+                
+                .table td,
+                th {
+                    padding: 10px 0px;
+                    border: 2px solid aquamarine;
+                    text-align: center;
+                }
+                
+                .separtor {
+                    display: flex;
+                }
+                
+                @media only screen and (max-width:700px) {
+                    .table table {
+                        margin: 40px 1px;
+                    }
+                    .separtor {
+                        flex-direction: column;
+                    }
+                    .img img {
+                        height: 70%;
+                    }
+                }
+                
+                @media only screen and (max-width:500px) {
+                    .action {
+                        width: 191px;
+                    }
+                    .name-logout {
+                        margin: 0px 34px;
+                    }
+                    .summary {
+                        flex-direction: column;
+                        align-items: center;
+                        margin: -25px;
+                    }
+                    .img {
+                        width: 58%;
+                        margin: 25px 64px;
+                    }
+                }
